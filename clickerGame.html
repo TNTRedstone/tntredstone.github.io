@@ -19,16 +19,16 @@
         </div>
     </body>
     <script>
-        if (getItem("multiplier")) {
-            let multiplier = getItem("multiplier")
+        if (localStorage.getItem("multiplier")) {
+            let multiplier = localStorage.getItem("multiplier")
         } else {
             let multiplier = 1;
         }
 
         function increment() {
             const counter = document.getElementById("count");
-            if (getItem("count")) {
-                let count = getItem("count")
+            if (localStorage.getItem("count")) {
+                let count = localStorage.getItem("count")
             } else {
                 let count = Number(counter.innerText);
             }
