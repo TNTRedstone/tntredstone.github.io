@@ -7,7 +7,7 @@ body {
 
 #sect-1 {
     background-color: #411c1c;
-    height: 100vh;
+    height: calc(100vh - 32px);
     display: flex;
     padding: 16px;
     overflow: hidden;
@@ -34,6 +34,28 @@ body {
     width: calc(100% - 450px);
 }
 
-img {
+#sect-1 img {
     margin-top: 75px;
+}
+#sect-1 button {
+    color: white;
+    border: none;
+    font-size: 36px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 8px;
+}
+
+#sect-2 {
+    height: 80vh;
+    background-color: #231C41;
+    padding: 16px;
+    display: flex;
+}
+
+#sect-3 {
+    height: 80vh;
+    background-color: #1C4126;
+    padding: 16px;
+    display: flex;
 }
