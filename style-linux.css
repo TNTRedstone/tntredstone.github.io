@@ -1,0 +1,37 @@
+body {
+    background-color: #262121;
+    color: white;
+    font-family: sans-serif;
+}
+
+code {
+    font-size: 16px;
+    background-color: #655858;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.card-container {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: #3b3333;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    background-color: #655858;
+    border: none;
+    padding: 4px;
+    border-radius: 6px;
+}
