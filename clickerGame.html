@@ -26,6 +26,9 @@
             let count = Number(counter.innerText);
             counter.innerText = count + 1 * multiplier;
             localStorage.setItem("count", count + 1 * multiplier)
+            if (count + 1 * multiplier > 10**50) {
+                alert("You have more than 1 follow by 50 zeros, maybe you'll finally get a girlfriend")
+            }
         }
 
         function multiplier_increase() {
