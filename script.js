@@ -15,9 +15,33 @@ const extensions = [
     {title: "C++ & C theme", downloads: 24571686, link: "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-themes"},
     {title: "Material icon theme", downloads: 18692404, link: "https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme"},
     {title: "VSCode icons", downloads: 18692404, link: "https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons"},
-    {title: "One dark pro", downloads: , link: "https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme"},
-    {title: "Dracula offical", downloads: , link: "https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme"},
-    {title: "Atom one dark", downloads: , link: "https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme"},
-    {title: "Material theme icons", downloads: , link: "https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons"},
-    {title: "Material theme", downloads: , link: "https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme"},
+    {title: "One dark pro", downloads: 9587072, link: "https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme"},
+    {title: "Dracula offical", downloads: 7383041, link: "https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme"},
+    {title: "Atom one dark", downloads: 5625386, link: "https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme"},
+    {title: "Material theme icons", downloads: 4448301, link: "https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons"},
+    {title: "Material theme", downloads: 3295894, link: "https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme"},
 ]
+
+extensions.forEach((extension) => {
+    const name = document.createElement("h1");
+    name.innerText = extension.title;
+
+    const downloads = document.createElement("h3");
+    downloads.innerText = `${extension.downloads.toLocaleString()} downloads`;
+
+    const link = document.createElement("a")
+    link.href = extension.link
+    link.innerText = "Download"
+
+    const button = document.createElement("button")
+
+    button.append(link)
+
+    const card = document.createElement("div")
+    card.classList = ["card"]
+    card.append(name)
+    card.append(downloads)
+    card.append(button)
+
+    document.querySelector(".card-container").append(card)
+})

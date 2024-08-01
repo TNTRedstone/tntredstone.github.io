@@ -60,7 +60,7 @@ body {
     display: flex;
 }
 
-#sect-3 button, #sect-2 button {
+#sect-3 button, #sect-2 button, #sect-4 button {
     color: white;
     border: none;
     font-size: 36px;
@@ -72,4 +72,20 @@ body {
 a {
     text-decoration: none;
     color: white;
+}
+
+#sect-4 {
+    min-height: 25vh;
+    background-color: #262121;
+    padding: 8px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
 }
