@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(208,21,21,1) 0%, rgba(255,126,21,1) 25%, rgba(253,240,38,1) 50%, rgba(76,253,52,1) 75%, rgba(133,69,252,1) 100%);
+            background-size: 400%;
+            animation: gradient 45s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
